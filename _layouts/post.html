@@ -1,0 +1,27 @@
+---
+layout: default
+---
+
+                        <article class="section">
+                            <header>
+                                <h2 class="title is-3 has-text-weight-light">{{page.title}}</h2>
+                                <p class="is-size-6 is-italic">
+                                    Por: <a href="/about">{{page.author}}</a><br>
+                                    <small><time>{{page.date|date: "%A %e de %h, %Y"}}</time></small>
+                                </p>
+                            </header>
+                            <hr>
+                            {{content}}
+                            <hr>
+                            <footer>
+                                <p class="tags">
+                                    {%for category in page.categories%}
+                                    <span class="tag">{{category|capitalize}}</span>
+                                    {%endfor%}
+
+                                </p>
+                                <p class="is-size-2 has-text-centered">
+                                    <a href="{{site.url}}" class="has-text-dark" title="Regresar">&larr;</a>
+                                </p>
+                            </footer>
+                        </article>

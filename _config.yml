@@ -1,0 +1,13 @@
+lang: es
+author: Mario Abreu
+title: Jekyll & Bulma
+subtitle: Made it with Bulma and ♥ 
+
+plugins: 
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+kramdown:
+  input: GFM
+

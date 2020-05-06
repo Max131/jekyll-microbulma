@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+                        <article class="section">
+                            <header>
+                                <h2 class="title is-4 has-text-weight-light">Mario Abreu</h2>
+                            </header>
+                            <hr>
+                            {% if page.picture!=nil %}
+                            <figure class="image is-pulled-right is-overlay">
+                                <img class="is-rounded" src="{{page.picture}}" alt="Picture of {{site.author}}" style="max-width: 200px; margin-top: -25px">
+                            </figure>
+                            {%endif%}
+                            {{content}}                            
+                        </article>
