@@ -1,14 +1,14 @@
 ---
 layout: default
 ---
-						<div class="section">
+						<div class="section content">
 						{{content}}
 						</div>
 						{%for post in site.posts%}
-						<article class="section">
+						<article class="section content">
                             <h2 class="title is-4 has-text-weight-light">{{post.title}}</h2>
                             <small class="is-size-6 is-italic"><time>{{post.date|date: "%A %e de %h, %Y"}}</time></small>
-                            {{post.excerpt}}
+                            {{post.excerpt|truncatewords: 30}}
                             <p><a href="{{post.url}}" class="button">Leer&hellip;</a></p>
                         </article>
                         {%endfor%}
