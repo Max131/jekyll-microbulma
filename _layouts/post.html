@@ -6,7 +6,7 @@ layout: default
                             <header>
                                 <h2 class="title is-3 has-text-weight-light">{{page.title}}</h2>
                                 <p class="is-size-6 is-italic">
-                                    Por: <a href="/about">{{page.author}}</a><br>
+                                    Por: <a href="{{site.baseurl}}/about">{{page.author}}</a><br>
                                     <small><time>{{page.date|date: "%A %e de %h, %Y"}}</time></small>
                                 </p>
                             </header>
@@ -25,11 +25,11 @@ layout: default
 						<div class="tabs is-toggle is-fullwidth is-centered">
                         	<ul role="navigation">
                             	<li> {%if page.previous.url!=nil%}
-                            		<a href="{{page.previous.url}}" title="Artículo anterior"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span></a>{%endif%}
+                            		<a href="{{site.baseurl}}{{page.previous.url}}" title="Artículo anterior"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span></a>{%endif%}
                             	</li>
-                                <li><a href="{{site.url}}" title="Página de inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
+                                <li><a href="{{site.url}}{{site.baseurl}}/" title="Página de inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
                                 <li> {%if page.next.url!=nil%}
-                                	<a href="{{page.next.url}}" title="Artículo siguiente"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span></a>{%endif%}
+                                	<a href="{{site.baseurl}}{{page.next.url}}" title="Artículo siguiente"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span></a>{%endif%}
                                 </li>
                             </ul>
 						</div>

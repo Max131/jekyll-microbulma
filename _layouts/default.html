@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
-    <link rel="stylesheet" href="/assets/syntax.css">
+    <link rel="stylesheet" href="{{site.baseurl}}/assets/syntax.css">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <title>{{site.title}} - {{page.title}}</title>
     {% seo %}
@@ -26,10 +26,10 @@
                         <nav role="navigation" aria-label="main navigation">
                             <div class="tabs is-centered is-medium">
                                 <ul>
-                                    <li><a href="{{site.url}}" role="menuitem" title="Inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
+                                    <li><a href="{{site.url}}{{site.baseurl}}/" role="menuitem" title="Inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
                                     <li><a role="menuitem" title="Twitter"><span class="icon is-small"><i class="fab fa-twitter"></i></span></a></li>
                                     <li><a role="menuitem" title="Github"><span class="icon is-small"><i class="fab fa-github"></i></span></a></li>
-                                    <li><a href="/about/" role="menuitem" title="Acerca de"><span class="icon is-small"><i class="fas fa-user-circle"></i></span></a></li>
+                                    <li><a href="{{site.baseurl}}/about/" role="menuitem" title="Acerca de"><span class="icon is-small"><i class="fas fa-user-circle"></i></span></a></li>
                                 </ul>
                             </div>
                         </nav>
