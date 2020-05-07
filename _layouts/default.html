@@ -9,45 +9,43 @@
     <title>{{site.title}} - {{page.title}}</title>
     {% seo %}
 </head>
-<body>
-    <div class="container">
-        <div class="columns is-centered">
-            <div class="column is-5">
-                <section class="hero" role="heading">
-                    <div class="hero-body">
-                        <a href="{{site.url}}{{site.baseurl}}/">
-                        <h1 class="title has-text-centered has-text-weight-light">
-                        {{site.title}}
-                    	</h1>
-                        </a>
-                        <h2 class="subtitle has-text-centered has-text-grey-light">
-                        {{site.subtitle}}
-                        </h2>
-                    </div>
-                    <div class="hero-foot">
-                        <nav role="navigation" aria-label="main navigation">
-                            <div class="tabs is-centered is-medium">
-                                <ul>
-                                    <li><a href="{{site.url}}{{site.baseurl}}/" role="menuitem" title="Inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
-                                    <li><a role="menuitem" title="Twitter"><span class="icon is-small"><i class="fab fa-twitter"></i></span></a></li>
-                                    <li><a role="menuitem" title="Github"><span class="icon is-small"><i class="fab fa-github"></i></span></a></li>
-                                    <li><a href="{{site.baseurl}}/about/" role="menuitem" title="Acerca de"><span class="icon is-small"><i class="fas fa-user-circle"></i></span></a></li>
-                                </ul>
-                            </div>
-                        </nav>
-                    </div>
-                </section>
-                <main class="section">
-                        {{content}}
-                </main>
-                    <hr>
-                    <footer>
-                        <p class="has-text-centered">
-                            Jekyll & Bulma&copy;2020
-                        </p>
-                    </footer>
-            </div>
+<body style="overflow-x: hidden;">
+    <div class="columns is-centered">
+        <div class="column is-5">
+            <section class="hero" role="heading">
+                <div class="hero-body">
+                    <a href="{{site.url}}{{site.baseurl}}/">
+                    <h1 class="title has-text-centered has-text-weight-light">
+                    {{site.title}}
+                	</h1>
+                    </a>
+                    <h2 class="subtitle has-text-centered has-text-grey-light">
+                    {{site.subtitle}}
+                    </h2>
+                </div>
+                <div class="hero-foot">
+                    <nav role="navigation" aria-label="main navigation">
+                        <div class="tabs is-centered is-medium">
+                            <ul>
+                                <li><a href="{{site.url}}{{site.baseurl}}/" role="menuitem" title="Inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
+                                <li><a role="menuitem" title="Twitter"><span class="icon is-small"><i class="fab fa-twitter"></i></span></a></li>
+                                <li><a role="menuitem" title="Github"><span class="icon is-small"><i class="fab fa-github"></i></span></a></li>
+                                <li><a href="{{site.baseurl}}/about/" role="menuitem" title="Acerca de"><span class="icon is-small"><i class="fas fa-user-circle"></i></span></a></li>
+                            </ul>
+                        </div>
+                    </nav>
+                </div>
+            </section>
+            <main class="section">
+                    {{content}}
+            </main>
+                <hr>
+                <footer>
+                    <p class="has-text-centered">
+                        Jekyll & Bulma&copy;2020
+                    </p>
+                </footer>
         </div>
-    </div>    
+    </div>
 </body>
 </html>

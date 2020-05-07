@@ -4,16 +4,16 @@ layout: default
 						<div class="section content is-marginless">
 						{{content}}
 						</div>
-						{%for post in paginator.posts%}
+						{% for post in paginator.posts %}
 						<article class="section content" style="padding-top: 0">
                             <a href="{{ site.baseurl }}{{ post.url }}">
-                              <h2 class="title is-4 has-text-weight-normal">{{post.title}}</h2>
+                              <h2 class="title is-4 has-text-weight-normal">{{ post.title }}</h2>
                             </a>
-                            <small class="is-size-6 is-italic"><time>{{post.date|date: "%A %e de %h, %Y"}}</time></small>
-                            {{post.excerpt|truncatewords: 30}}
+                            <small class="is-size-6 is-italic"><time>{{ post.date|date: "%A %e de %h, %Y" }}</time></small>
+                            {{ post.excerpt|truncatewords: 30 }}
                             <p><a href="{{site.baseurl}}{{post.url}}" class="button">Leer&hellip;</a></p>
                         </article>
-                        {%endfor%}
+                        {% endfor %}
                         <hr>
                         {% if paginator.total_pages > 1 %}
                         <div class="tabs is-toggle is-centered is-fullwidth">
