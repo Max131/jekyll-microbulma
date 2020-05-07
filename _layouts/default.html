@@ -10,14 +10,16 @@
     {% seo %}
 </head>
 <body>
-    <main class="container">
+    <div class="container">
         <div class="columns is-centered">
             <div class="column is-5">
                 <section class="hero" role="heading">
                     <div class="hero-body">
+                        <a href="{{site.url}}{{site.baseurl}}/">
                         <h1 class="title has-text-centered has-text-weight-light">
                         {{site.title}}
                     	</h1>
+                        </a>
                         <h2 class="subtitle has-text-centered has-text-grey-light">
                         {{site.subtitle}}
                         </h2>
@@ -35,17 +37,17 @@
                         </nav>
                     </div>
                 </section>
-                <section class="section">
+                <main class="section">
                         {{content}}
+                </main>
                     <hr>
                     <footer>
                         <p class="has-text-centered">
                             Jekyll & Bulma&copy;2020
                         </p>
                     </footer>
-                </section>
             </div>
         </div>
-    </main>    
+    </div>    
 </body>
 </html>

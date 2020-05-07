@@ -8,7 +8,25 @@ plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate-v2
 
 kramdown:
   input: GFM
 
+pagination: 
+  enabled: true
+  per_page: 3
+  permalink: "page/:num/"
+  title: " - page :num"
+  limit: 0
+  sort_field: "date"
+  sort_reversed: true
+
+defaults:
+  - scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      author: "Mario Abreu"
+  
