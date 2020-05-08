@@ -2,7 +2,9 @@ baseurl: "/jekyll-microbulma"
 lang: es
 author: Mario Abreu
 title: Micro One!
-subtitle: Made it with Bulma and ♥ 
+subtitle: Made it with Bulma and ♥
+twitter_user: maxito_abreu
+github_user: max131
 
 plugins: 
   - jekyll-feed
@@ -20,4 +22,4 @@ defaults:
     values:
       layout: "post"
       author: "Mario Abreu"
-  
+      
