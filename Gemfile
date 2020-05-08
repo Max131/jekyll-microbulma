@@ -2,7 +2,7 @@
 
 source "https://rubygems.org"
 gemspec
-
+gem "bundler"
 gem "jekyll"
 group :jekyll_plugins  do
   gem "jekyll-feed"
