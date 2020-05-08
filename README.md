@@ -1,4 +1,22 @@
-# Jekyll & Bulma 
+# Jekyll Micro One
+
+This is a very simple [Jekyll](https://jekyllrb.com) theme made it with [Bulma CSS](https://bulma.io). It is an alpha release but functional. I made it to learn about Jekyll. 
+
+Features:
+- Simple and responsive
+- Pagination support
+- Github support
+- Only two social buttons, Github and Twitter
+- About simple layout
+
+
+Next Features:
+- Image header for posts
+
+I repeat, this is an **alpha release** made it in one lazy day, but it is functional. 
+
+
+***
 
 Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
 
