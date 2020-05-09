@@ -2,15 +2,15 @@
 layout: default
 ---
 
-                        <article class="section">
+                        <article class="section" role="article">
                             <header>
-                                <h2 class="title is-4 has-text-weight-light">Mario Abreu</h2>
+                                <h2 class="title is-4 has-text-weight-light" role="heading" aria-level="2">Mario Abreu</h2>
                             </header>
-                            <hr>
+                            <hr role="separator">
                             {% if page.picture!=nil %}
                             <div class="content has-text-centered">
-                                <figure class="image">
-                                    <img class="is-rounded" src="{{page.picture}}" alt="Picture of {{site.author}}" style="max-width: 150px;">
+                                <figure class="image" role="figure">
+                                    <img class="is-rounded" src="{{page.picture}}" alt="Picture of {{site.author}}" style="max-width: 150px;" role="img">
                                 </figure>
                             </div>
                             {%endif%}

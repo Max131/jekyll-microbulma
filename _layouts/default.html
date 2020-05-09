@@ -13,10 +13,10 @@
 <body> 
     <div class="columns is-centered">
         <div class="column is-5">
-            <section class="hero" role="heading">
+            <section class="hero">
                 <div class="hero-body">
                     <a href="{{site.url}}{{site.baseurl}}/">
-                    <h1 class="title is-1 has-text-centered has-text-weight-light">
+                    <h1 class="title is-1 has-text-centered has-text-weight-light" role="heading" aria-level="1">
                     {{site.title}}
                 	</h1>
                     </a>
@@ -27,7 +27,7 @@
                 <div class="hero-foot">
                     <nav role="navigation" aria-label="main navigation">
                         <div class="tabs is-centered is-medium">
-                            <ul>
+                            <ul role="navigation">
                                 <li>
                                     <a href="{{site.url}}{{site.baseurl}}/" role="menuitem" title="Inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a>
                                 </li>
@@ -49,11 +49,11 @@
                     </nav>
                 </div>
             </section>
-            <main class="section">
+            <main class="section" role="main">
                     {{content}}
             </main>
-            <hr>
-            <footer>
+            <hr role="separator">
+            <footer role="contentinfo">
                 <p class="has-text-centered">
                     <strong>{{ site.title }}&copy; 2020</strong>
                 </p>

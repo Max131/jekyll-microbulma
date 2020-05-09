@@ -4,31 +4,31 @@ layout: default
 						<div class="section content is-marginless">
 						{{content}}
 						</div>
-						{% for post in paginator.posts %}
-						<article class="section content" style="padding-top: 0">
-                            <a href="{{ site.baseurl }}{{ post.url }}">
-                              <h2 class="title is-4 has-text-weight-normal">{{ post.title }}</h2>
-                            </a>
-                            <small class="is-size-6 is-italic"><time>{{ post.date|date: "%A %e de %h, %Y" }}</time></small>
-                            {{ post.excerpt|truncatewords: 30 }}
-                            <p><a href="{{site.baseurl}}{{post.url}}" class="button">Leer&hellip;</a></p>
-                        </article>
-                        {% endfor %}
-                        <hr>
-                        {% if paginator.total_pages > 1 %}
-                        <div class="tabs is-toggle is-centered is-fullwidth">
-                        <ul>
-                          <li>
-                          {% if paginator.next_page %}
-                            <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Artículos anteriores"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span></a>
-                          {% endif %}
-                          </li>
-                          <li><a href="{{site.url|append: site.baseurl}}/" title="Inicio del blog"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
-                          <li>
-                          {% if paginator.previous_page %}
-                            <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Artículos siguientes"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span></a>
-                          {% endif %}
-                          </li>
-                        </ul>
-                        {% endif %}
-                        </div>
+            {% for post in paginator.posts %}
+            <article class="section content" role="article" style="padding-top: 0">
+                <a href="{{ site.baseurl }}{{ post.url }}">
+                  <h2 class="title is-4 has-text-weight-normal" role="heading" aria-level="2">{{ post.title }}</h2>
+                </a>
+                <small class="is-size-6 is-italic"><time>{{ post.date|date: "%A %e de %h, %Y" }}</time></small>
+                {{ post.excerpt|truncatewords: 30 }}
+                <p><a href="{{site.baseurl}}{{post.url}}" class="button">Leer&hellip;</a></p>
+            </article>
+            {% endfor %}
+            <hr role="separator">
+            {% if paginator.total_pages > 1 %}
+            <div class="tabs is-toggle is-centered is-fullwidth">
+            <ul>
+              <li>
+              {% if paginator.next_page %}
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Artículos anteriores"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span></a>
+              {% endif %}
+              </li>
+              <li><a href="{{site.url|append: site.baseurl}}/" title="Inicio del blog"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
+              <li>
+              {% if paginator.previous_page %}
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Artículos siguientes"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span></a>
+              {% endif %}
+              </li>
+            </ul>
+            {% endif %}
+            </div>
