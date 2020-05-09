@@ -9,56 +9,55 @@
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <title>{{site.title}} - {{page.title}}</title>
     {% seo %}
+    <style>
+        body{max-width: 500px;margin: 0 auto;}
+    </style>
 </head>
 <body> 
-    <div class="columns is-centered">
-        <div class="column is-5">
-            <section class="hero">
-                <div class="hero-body">
-                    <a href="{{site.url}}{{site.baseurl}}/">
-                    <h1 class="title is-1 has-text-centered has-text-weight-light" role="heading" aria-level="1">
-                    {{site.title}}
-                	</h1>
-                    </a>
-                    <h2 class="subtitle has-text-centered has-text-grey-light">
-                    {{site.subtitle}}
-                    </h2>
-                </div>
-                <div class="hero-foot">
-                    <nav role="navigation" aria-label="main navigation">
-                        <div class="tabs is-centered is-medium">
-                            <ul role="navigation">
-                                <li>
-                                    <a href="{{site.url}}{{site.baseurl}}/" role="menuitem" title="Inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a>
-                                </li>
-                                {% if site.twitter_user %}
-                                <li>
-                                    <a href="https://twitter.com/{{ site.twitter_user }}" target="_blank" role="menuitem" title="Twitter"><span class="icon is-small"><i class="fab fa-twitter"></i></span></a>
-                                </li>
-                                {% endif %}
-                                {% if site.github_user %}
-                                <li>
-                                    <a href="https://github.com/{{ site.github_user }}" target="_blank" role="menuitem" title="Github"><span class="icon is-small"><i class="fab fa-github"></i></span></a>
-                                </li>
-                                {% endif %}
-                                <li>
-                                    <a href="{{site.baseurl}}/about/" role="menuitem" title="Acerca de"><span class="icon is-small"><i class="fas fa-user-circle"></i></span></a>
-                                </li>
-                            </ul>
-                        </div>
-                    </nav>
-                </div>
-            </section>
-            <main class="section" role="main">
-                    {{content}}
-            </main>
-            <hr role="separator">
-            <footer role="contentinfo">
-                <p class="has-text-centered">
-                    <strong>{{ site.title }}&copy; 2020</strong>
-                </p>
-            </footer>
+    <section class="hero">
+        <div class="hero-body">
+            <a href="{{site.url}}{{site.baseurl}}/">
+            <h1 class="title is-1 has-text-centered has-text-weight-light" role="heading" aria-level="1">
+            {{site.title}}
+            </h1>
+            </a>
+            <h2 class="subtitle has-text-centered has-text-grey-light">
+            {{site.subtitle}}
+            </h2>
         </div>
-    </div>
+        <div class="hero-foot">
+            <nav role="navigation" aria-label="main navigation">
+                <div class="tabs is-centered is-medium">
+                    <ul role="navigation">
+                        <li>
+                            <a href="{{site.url}}{{site.baseurl}}/" role="menuitem" title="Inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a>
+                        </li>
+                        {% if site.twitter_user %}
+                        <li>
+                            <a href="https://twitter.com/{{ site.twitter_user }}" target="_blank" role="menuitem" title="Twitter"><span class="icon is-small"><i class="fab fa-twitter"></i></span></a>
+                        </li>
+                        {% endif %}
+                        {% if site.github_user %}
+                        <li>
+                            <a href="https://github.com/{{ site.github_user }}" target="_blank" role="menuitem" title="Github"><span class="icon is-small"><i class="fab fa-github"></i></span></a>
+                        </li>
+                        {% endif %}
+                        <li>
+                            <a href="{{site.baseurl}}/about/" role="menuitem" title="Acerca de"><span class="icon is-small"><i class="fas fa-user-circle"></i></span></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+    <main role="main">
+            {{content}}
+    </main>
+    <hr role="separator">
+    <footer role="contentinfo">
+        <p class="has-text-centered">
+            <strong>{{ site.title }}&copy; 2020</strong>
+        </p>
+    </footer>
 </body>
 </html>
