@@ -1,7 +1,12 @@
 ---
 layout: default
 ---
-
-<div class="section content">
+{% if page.page_image != nil %}
+<hr>
+<figure class="image">
+    <img src="{{ page.page_image }}" class="is-post_image " alt="Page header image">
+</figure>
+{% endif%}
+<div class="section content has-background-white-bis {% if page.page_image %} is-bottom-rounded {% else %} is-all-rounded is-margin-top {% endif %}">
 {{ content }}
 </div>
