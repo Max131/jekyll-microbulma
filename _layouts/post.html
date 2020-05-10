@@ -30,11 +30,11 @@ layout: default
 						<div class="tabs is-toggle is-fullwidth is-centered">
                         	<ul role="navigation">
                             	<li> {%if page.previous.url!=nil%}
-                            		<a href="{{site.baseurl}}{{page.previous.url}}" title="Artículo anterior"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span></a>{%endif%}
+                            		<a href="{{site.baseurl}}{{page.previous.url}}" title="Artículo anterior"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span><span class="is-sr-only">Artículo anterior</span></a>{%endif%}
                             	</li>
-                                <li><a href="{{site.url}}{{site.baseurl}}/" title="Página de inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
+                                <li><a href="{{site.url}}{{site.baseurl}}/" title="Página de inicio"><span class="icon is-small"><i class="fas fa-home"></i></span><span class="is-sr-only">Página de inicio</span></a></li>
                                 <li> {%if page.next.url!=nil%}
-                                	<a href="{{site.baseurl}}{{page.next.url}}" title="Artículo siguiente"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span></a>{%endif%}
+                                	<a href="{{site.baseurl}}{{page.next.url}}" title="Artículo siguiente"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span><span class="is-sr-only">Artículo siguiente</span></a>{%endif%}
                                 </li>
                             </ul>
 						</div>

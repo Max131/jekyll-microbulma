@@ -31,20 +31,20 @@
                 <div class="tabs is-centered is-medium">
                     <ul role="navigation">
                         <li>
-                            <a href="{{site.url}}{{site.baseurl}}/" role="menuitem" title="Inicio"><span class="icon is-small"><i class="fas fa-home"></i></span></a>
+                            <a href="{{site.url}}{{site.baseurl}}/" role="menuitem" title="Inicio"><span class="icon is-small"><i class="fas fa-home"></i></span><span class="is-sr-only">Página de inicio</span></a>
                         </li>
                         {% if site.twitter_user %}
                         <li>
-                            <a href="https://twitter.com/{{ site.twitter_user }}" target="_blank" role="menuitem" title="Twitter"><span class="icon is-small"><i class="fab fa-twitter"></i></span></a>
+                            <a href="https://twitter.com/{{ site.twitter_user }}" target="_blank" role="menuitem" title="Twitter"><span class="icon is-small"><i class="fab fa-twitter"></i></span><span class="is-sr-only">@{{ site.twitter_user }}</span></a>
                         </li>
                         {% endif %}
                         {% if site.github_user %}
                         <li>
-                            <a href="https://github.com/{{ site.github_user }}" target="_blank" role="menuitem" title="Github"><span class="icon is-small"><i class="fab fa-github"></i></span></a>
+                            <a href="https://github.com/{{ site.github_user }}" target="_blank" role="menuitem" title="Github"><span class="icon is-small"><i class="fab fa-github"></i></span><span class="is-sr-only">{{ site.github_user }}</span></a>
                         </li>
                         {% endif %}
                         <li>
-                            <a href="{{site.baseurl}}/about/" role="menuitem" title="Acerca de"><span class="icon is-small"><i class="fas fa-user-circle"></i></span></a>
+                            <a href="{{site.baseurl}}/about/" role="menuitem" title="Acerca de"><span class="icon is-small"><i class="fas fa-user-circle"></i></span><span class="is-sr-only">Acerca de {{ site.author }}</span></a>
                         </li>
                     </ul>
                 </div>

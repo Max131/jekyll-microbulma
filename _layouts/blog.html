@@ -22,13 +22,13 @@ layout: default
             <ul>
               <li>
               {% if paginator.next_page %}
-                <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Artículos anteriores"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span></a>
+                <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Artículos anteriores"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span><span class="is-sr-only">Artículos anteriores</span></a>
               {% endif %}
               </li>
-              <li><a href="{{site.url|append: site.baseurl}}/" title="Inicio del blog"><span class="icon is-small"><i class="fas fa-home"></i></span></a></li>
+              <li><a href="{{site.url|append: site.baseurl}}/" title="Inicio del blog"><span class="icon is-small"><i class="fas fa-home"></i></span><span class="is-sr-only">Página de inicio></span></a></li>
               <li>
               {% if paginator.previous_page %}
-                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Artículos siguientes"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span></a>
+                <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Artículos siguientes"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span><span class="is-sr-only">Artículos siguientes</span></a>
               {% endif %}
               </li>
             </ul>
