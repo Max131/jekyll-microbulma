@@ -10,7 +10,7 @@ layout: default
                         <article class="section content has-background-white-bis {% if page.post_image %} is-bottom-rounded {% else %} is-all-rounded is-margin-top {% endif %}" role="article">
                             <header role="banner">
                                 <h2 class="title is-3 has-text-weight-light">{{page.title}}</h2>
-                                <p class="is-size-6 is-italic">
+                                <p class="is-size-6">
                                     Por: <a href="{{site.baseurl}}/about">{{page.author}}</a><br>
                                     <small><time>{{page.date|date: "%A %e de %h, %Y"}}</time></small>
                                 </p>
@@ -23,16 +23,15 @@ layout: default
                                     {%for category in page.categories%}
                                     <span class="tag">{{category|capitalize}}</span>
                                     {%endfor%}
-
                                 </p>
                             </footer>
                         </article>
-						<div class="tabs is-toggle is-fullwidth is-centered">
+						<div class="tabs is-fullwidth is-centered section">
                         	<ul role="navigation">
                             	<li> {%if page.previous.url!=nil%}
                             		<a href="{{site.baseurl}}{{page.previous.url}}" title="Artículo anterior"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span><span class="is-sr-only">Artículo anterior</span></a>{%endif%}
                             	</li>
-                                <li><a href="{{site.url}}{{site.baseurl}}/" title="Página de inicio"><span class="icon is-small"><i class="fas fa-home"></i></span><span class="is-sr-only">Página de inicio</span></a></li>
+                                <li><a href="#top" title="Volver a arriba"><span class="icon is-small"><i class="fas fa-arrow-alt-circle-up"></i></span><span class="is-sr-only">Volver a arriba</span></a></li>
                                 <li> {%if page.next.url!=nil%}
                                 	<a href="{{site.baseurl}}{{page.next.url}}" title="Artículo siguiente"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span><span class="is-sr-only">Artículo siguiente</span></a>{%endif%}
                                 </li>

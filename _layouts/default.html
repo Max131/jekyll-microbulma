@@ -1,18 +1,15 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" id="top">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.8.2/css/bulma.min.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/micro.css">
     <link rel="stylesheet" href="{{site.baseurl}}/assets/syntax.css">
     <link rel="shortcut icon" href="{{site.baseurl}}/favicon.ico" type="image/x-icon">
     <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
     <title>{{site.title}} - {{page.title}}</title>
     {% seo %}
-    <style>
-        
-    </style>
+    {% feed_meta %}
 </head>
 <body> 
     <section class="hero">
@@ -22,7 +19,7 @@
             {{site.title}}
             </h1>
             </a>
-            <h2 class="subtitle has-text-centered has-text-grey-light">
+            <h2 class="subtitle has-text-centered has-text-grey">
             {{site.subtitle}}
             </h2>
         </div>
@@ -54,8 +51,7 @@
     <main role="main">
             {{content}}
     </main>
-    <hr role="separator">
-    <footer role="contentinfo">
+    <footer class="section" role="contentinfo">
         <p class="has-text-centered">
             <strong>{{ site.title }}&copy; 2020</strong>
         </p>

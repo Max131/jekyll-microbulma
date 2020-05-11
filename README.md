@@ -2,23 +2,30 @@
 
 This is a very simple [Jekyll](https://jekyllrb.com) theme made it with [Bulma CSS](https://bulma.io). It is an alpha release but functional. I made it to learn about Jekyll. 
 
-Features:
+**Features:**
 - Simple and responsive
 - Pagination support
 - Github support
 - Only two social buttons, Github and Twitter
 - About simple layout
+- Image header for posts (add `post_image` with an url image in front matter)
+
+**Updates:**
+- A minimal and custom set of Bulma
+- Moved to Nunito font
+- Little fixes
 
 
-Next Features:
-- Image header for posts
+**ToDo:**
+- Full translation (now is a spanglish mix)
+- Support for languages
 
-I repeat, this is an **alpha release** made it in one lazy day, but it is functional. 
-
+![Jekyll Micro](jm_blog.png)
+![Micro Post](jm_post.png)
 
 ***
 
-Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
+<!-- Welcome to your new Jekyll theme! In this directory, you'll find the files you need to be able to package up your theme into a gem. Put your layouts in `_layouts`, your includes in `_includes`, your sass files in `_sass` and any other assets in `assets`.
 
 To experiment with this code, add some sample content and run `bundle exec jekyll serve` – this directory is setup just like a Jekyll site!
 
@@ -68,3 +75,4 @@ To add a custom directory to your theme-gem, please edit the regexp in `micro.ge
 
 The theme is available as open source under the terms of the [MIT License](https://opensource.org/licenses/MIT).
 
+ -->

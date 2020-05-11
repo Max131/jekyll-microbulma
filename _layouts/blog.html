@@ -10,22 +10,21 @@ layout: default
                   <a href="{{ site.baseurl }}{{ post.url }}">
                     <h2 class="title is-4 has-text-weight-normal" role="heading" aria-level="2">{{ post.title }}</h2>
                   </a>
-                  <small class="is-size-6 is-italic"><time>{{ post.date|date: "%A %e de %h, %Y" }}</time></small>
+                  <small class="is-size-6"><time>{{ post.date|date: "%A %e de %h, %Y" }}</time></small>
                   {{ post.excerpt|truncatewords: 30 }}
                   <p><a href="{{site.baseurl}}{{post.url}}" class="button">Leer&hellip;</a></p>
               </article>
               {% endfor %}
               {% if paginator.total_pages > 1 %}
           </div>
-          <hr role="separator">
-            <div class="tabs is-toggle is-centered is-fullwidth">
+            <div class="tabs is-centered is-fullwidth section">
             <ul>
               <li>
               {% if paginator.next_page %}
                 <a href="{{ paginator.next_page_path | prepend: site.baseurl }}" title="Artículos anteriores"><span class="icon is-small"><i class="fas fa-arrow-left"></i></span><span class="is-sr-only">Artículos anteriores</span></a>
               {% endif %}
               </li>
-              <li><a href="{{site.url|append: site.baseurl}}/" title="Inicio del blog"><span class="icon is-small"><i class="fas fa-home"></i></span><span class="is-sr-only">Página de inicio></span></a></li>
+              <li><a href="#top" title="Volver a arriba"><span class="icon is-small"><i class="fas fa-arrow-alt-circle-up"></i></span><span class="is-sr-only">Volver a arriba</span></a></li>
               <li>
               {% if paginator.previous_page %}
                 <a href="{{ paginator.previous_page_path | prepend: site.baseurl }}" title="Artículos siguientes"><span class="icon is-small"><i class="fas fa-arrow-right"></i></span><span class="is-sr-only">Artículos siguientes</span></a>

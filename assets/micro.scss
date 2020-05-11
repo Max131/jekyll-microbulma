@@ -1,10 +1,15 @@
+---
+---
 @charset "utf-8";
+@import "bulma";
+html{ scroll-behavior: smooth; }
 body{max-width: 500px;margin: 0 auto;}
-.is-post_image{border-radius: 0.5rem 0.5rem 0 0;}
+.is-post_image{border-radius: 0.5rem 0.5rem 0 0; margin-bottom: -8px;}
 .is-all-rounded{border-radius: 0.5rem}
 .is-bottom-rounded{border-radius: 0 0 0.5rem 0.5rem;}
 .is-margin-top{margin-top: 3rem;}
 .is-padding-top{padding-top: 2rem;}
 @media screen and (max-width: 500px){
-    .is-post_image{border-radius: 0;}
+    .is-post_image{border-radius: 2px 2px 0 0;}
+	.is-bottom-rounded{border-radius: 0 0 2px 2px;}
 }
