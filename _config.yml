@@ -12,6 +12,7 @@ plugins:
   - jekyll-seo-tag
   - jekyll-paginate
 
+permalink: "/:title/"    
 paginate: 3
 paginate_path: "/page/:num"
 
