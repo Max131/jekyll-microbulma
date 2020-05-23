@@ -12,4 +12,4 @@ Lorem ipsum dolor sit amet, consectetur adipisicing elit. Beatae, accusantium.
 
 [Link](https://github.com)
 
-![Picsum](https://picsum.photos/seed/picsum/300)
+![Picsum](https://picsum.photos/seed/x/300)
