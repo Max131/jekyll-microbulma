@@ -1,0 +1,5 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/hnnjvigx/public_html/jekyll
+    - /bin/cp -R _site/* $DEPLOYPATH
