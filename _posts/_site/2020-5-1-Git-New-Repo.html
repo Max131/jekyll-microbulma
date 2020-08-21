@@ -1,0 +1,11 @@
+<p>How to add a new repo in console after created in github.</p>
+
+<p>After created the repo in github:</p>
+
+<div class="language-bash highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">echo</span> <span class="s2">"# blog"</span> <span class="o">&gt;&gt;</span> README.md
+git init
+git add README.md
+git commit <span class="nt">-m</span> <span class="s2">"first commit"</span>
+git remote add origin https://github.com/Max131/blog.git
+git push <span class="nt">-u</span> origin master
+</code></pre></div></div>
