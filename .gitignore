@@ -3,3 +3,4 @@
 .jekyll-cache
 .sass-cache
 Gemfile.lock
+node_modules
